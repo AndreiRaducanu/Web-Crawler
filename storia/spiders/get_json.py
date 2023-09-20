@@ -43,7 +43,7 @@ class JsonSpider(scrapy.Spider):
             json_data = response.json()
             items_page = len(json_data['pageProps']['data']['searchAds']['items'])
             print(f'Items in page: {str(items_page)}')
-            time.sleep(0.3)
+            #time.sleep(0.3)
             offer_data = []  # DataFrames
             for offer in json_data['pageProps']['data']['searchAds']['items']:
                 try:
@@ -56,6 +56,10 @@ class JsonSpider(scrapy.Spider):
                     location = offer['location']['reverseGeocoding']['locations'][-1].get('fullName')
                     location = location.replace(",","|")
                     price = offer['totalPrice'].get('value')
+                    currency = offer['totalPrice'].get('currency')
+                    if currency != "EUR":
+                        currency = int(price) // 5
+                        currency = "EUR"
 
                     # Create a DataFrame with the extracted data
                     offer_df = pd.DataFrame({
@@ -66,7 +70,8 @@ class JsonSpider(scrapy.Spider):
                         'Rooms': [rooms],
                         'Date': [date],
                         'Location': [location],
-                        'Price': [price]
+                        'Price': [price],
+                        'Currency': [currency]
                     })
 
                     # Append the DataFrame to the list
@@ -103,9 +108,8 @@ class JsonSpider(scrapy.Spider):
         self.logger.info("Spider closed: %s", reason)
         combine_data()  # Call combine_data when the spider is closed
 
-# After crawling all pages, you can combine the data into a single DataFrame
+# After crawling all pages,combine the data into a single DataFrame
 def combine_data():
     df = pd.concat(JsonSpider.json_data, ignore_index=True)
     df.to_csv('combined_data.csv', index=False)
 
-# You can run the spider and then call combine_data() to combine the data

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Rental Offers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Apartment Rental Offers</h1>
+        </nav>
+    </header>
+
+    <main>
+        <form id="filter-form">
+            <label for="min_price">Minimum Price:</label>
+            <input type="number" id="min_price" name="min_price">
+            <label for="max_price">Maximum Price:</label>
+            <input type="number" id="max_price" name="max_price">
+            <input type="submit" value="Apply Filter">
+        </form>
+
+        <div id="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Offer ID</th>
+                        <th>Title</th>
+                        <th>Slug</th>
+                        <th>Area</th>
+                        <th>Rooms</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                        <th>Price</th>
+                        <th>Currency</th>
+                    </tr>
+                </thead>
+                <tbody id="filtered-data-container">
+                    {% for offer in data %}
+                    <tr>
+                        <td>{{ offer['OfferID'] }}</td>
+                        <td>{{ offer['Title'] }}</td>
+                        <td>{{ offer['Slug'] }}</td>
+                        <td>{{ offer['Area'] }}</td>
+                        <td>{{ offer['Rooms'] }}</td>
+                        <td>{{ offer['Date'] }}</td>
+                        <td>{{ offer['Location'] }}</td>
+                        <td>{{ offer['Price'] }}</td>
+                        <td>{{ offer['Currency'] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // JavaScript to handle form submission
+        $(document).ready(function () {
+            $('#filter-form').submit(function (e) {
+                e.preventDefault();
+                // Get min_price and max_price values
+                var minPrice = $('#min_price').val();
+                var maxPrice = $('#max_price').val();
+                // Send an AJAX request to update the filtered data
+                $.ajax({
+                    url: '/',
+                    type: 'GET',
+                    data: {
+                        min_price: minPrice,
+                        max_price: maxPrice
+                    },
+                    success: function (data) {
+                        // Replace the entire table container with the updated data
+                        $('#table-container').html(data);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
