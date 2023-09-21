@@ -7,6 +7,7 @@ import pandas as pd
 class JsonSpider(scrapy.Spider):
     name = 'json_spider'
     json_data = []
+    offer_ids = set()
 
     def __init__(self, page, token):
         self.page = int(page)  # Convert page to an integer
@@ -76,6 +77,7 @@ class JsonSpider(scrapy.Spider):
 
                     # Append the DataFrame to the list
                     offer_data.append(offer_df)
+                    JsonSpider.offer_ids.add(offer_id)
                 except (KeyError, ValueError):
                     print("Json invalid")
 
