@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import pandas as pd
-import time  # Import the time module
+import time  
 
 app = Flask(__name__)
 
