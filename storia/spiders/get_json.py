@@ -1,6 +1,7 @@
 import scrapy
 from datetime import datetime
 import pandas as pd
+import os
 
 
 class JsonSpider(scrapy.Spider):
@@ -130,5 +131,8 @@ class JsonSpider(scrapy.Spider):
         self.combine_data()
 
     def combine_data(self):
+        # Define the path to the 'src' folder
+        src_folder = os.path.join(os.path.dirname("Web-Crawler"))
+        test_txt_path = os.path.join(src_folder, 'combined_data.csv')
         df = pd.concat(JsonSpider.json_data, ignore_index=True)
-        df.to_csv('combined_data.csv', index=False)
+        df.to_csv(test_txt_path, index=False)

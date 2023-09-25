@@ -16,6 +16,7 @@ header {
     text-align: center;
 }
 
+/* Style the header text */
 nav h1 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -29,16 +30,19 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Style the form */
 form {
     margin-bottom: 20px;
 }
 
+/* Style labels */
 label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
+/* Style number input fields */
 input[type="number"] {
     width: 100%;
     padding: 10px;
@@ -47,6 +51,7 @@ input[type="number"] {
     border-radius: 4px;
 }
 
+/* Style the submit button */
 input[type="submit"] {
     background-color: #007BFF;
     color: #fff;
@@ -56,11 +61,13 @@ input[type="submit"] {
     font-size: 16px;
 }
 
+/* Style the table */
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
+/* Style table headers and cells */
 table, th, td {
     border: 1px solid #ccc;
 }
@@ -71,19 +78,22 @@ th, td {
     font-size: 14px; /* Reduce font size for better readability */
 }
 
+/* Style table headers */
 th {
     background-color: #007BFF;
     color: #fff;
 }
 
+/* Style alternating table rows */
 tbody tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
 /* Media query for responsiveness */
 @media (max-width: 600px) {
+    /* Further reduce font size for small screens */
     table {
-        font-size: 12px; /* Further reduce font size for small screens */
+        font-size: 12px;
     }
 }
 

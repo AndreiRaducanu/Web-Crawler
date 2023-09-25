@@ -1,4 +1,11 @@
 OfferID,Title,Slug,Area,Rooms,Date,Location,Price,Currency
+7977642,Berceni Grand Arena Bd Constantin Brancoveanu Prima Chirie Parcare,berceni-grand-arena-bd-constantin-brancoveanu-prima-chirie-parcare-IDxtlE,75.0,THREE,2023-09-23 12:43:19,Berceni| Sectorul 4| Bucuresti,500,EUR
+7977638,Garsoniera Popesti Leordeni-Metrou Berceni *5 minute,garsoniera-popesti-leordeni-metrou-berceni-5-minute-IDxtlA,41.0,ONE,2023-09-23 12:41:21,Popesti Leordeni| Ilfov,340,EUR
+7977636,Universitate mosilor ocazie,universitate-mosilor-ocazie-IDxtly,55.0,TWO,2023-09-23 12:40:08,Cismigiu| Sectorul 1| Bucuresti,350,EUR
+7977625,13 Septembrie Uranus Cotroceni Marriott Nou Lux Centrala Terasa,13-septembrie-uranus-cotroceni-marriott-nou-lux-centrala-terasa-IDxtln,60.0,TWO,2023-09-23 12:36:55,Uranus| Sectorul 5| Bucuresti,600,EUR
+7977618,Tineretului 7` Metrou Parc Timpuri Noi Sincai Renovat Prima Chirie,tineretului-7-metrou-parc-timpuri-noi-sincai-renovat-prima-chirie-IDxtlg,40.0,ONE,2023-09-23 12:33:16,Tineretului| Sectorul 4| Bucuresti,400,EUR
+7977609,Berceni 7`Metrou Piata Sudului Mall Sun Plaza Renovat Modern Parcare,berceni-7metrou-piata-sudului-mall-sun-plaza-renovat-modern-parcare-IDxtl7,65.0,TWO,2023-09-23 12:29:28,Berceni| Sectorul 4| Bucuresti,430,EUR
+7977604,Închiriez Garsonieră Palady,nchiriez-garsonier-palady-IDxtl2,25.0,ONE,2023-09-23 12:27:40,Theodor Pallady| Sectorul 3| Bucuresti,290,EUR
 7977587,Inchiriez garsoniera Piata Victoriei,inchiriez-garsoniera-piata-victoriei-IDxtkL,23.0,ONE,2023-09-23 12:20:46,Cismigiu| Sectorul 1| Bucuresti,450,EUR
 7977570,"Garsoniera Bdul Basarabia, București-inchiriere",garsoniera-bdul-basarabia-bucureti-inchiriere-IDxtku,23.0,ONE,2023-09-23 12:14:22,Titan| Sectorul 3| Bucuresti,1150,EUR
 7977545,Drumul Taberei -ap. 2 camere situat la 150 m de parc/metrou/tramvai 41,drumul-taberei-ap-2-camere-situat-la-150-m-de-parc-metrou-tramvai-41-IDxtk5,56.0,TWO,2023-09-23 12:01:39,Militari| Sectorul 6| Bucuresti,480,EUR
@@ -7,7 +14,7 @@ OfferID,Title,Slug,Area,Rooms,Date,Location,Price,Currency
 7707216,Dorobanti/Floreasca/strada Tudor Stefan,dorobanti-floreasca-strada-tudor-stefan-IDvkZV,100.0,THREE,2023-09-23 11:49:13,Floreasca| Sectorul 1| Bucuresti,1200,EUR
 7977519,Apartament 2 camere de inchiriat Prelungirea Ghencea,apartament-2-camere-de-inchiriat-prelungirea-ghencea-IDxtjF,55.0,TWO,2023-09-23 11:43:55,Ghencea| Sectorul 5| Bucuresti,350,EUR
 7977508,Inchiriez apartament 2 Camere Piata Muncii,inchiriez-apartament-2-camere-piata-muncii-IDxtju,58.0,TWO,2023-09-23 11:38:51,Cismigiu| Sectorul 1| Bucuresti,650,EUR
-7977505,Costin Georgian metrou - Mutare Imediata - Prima Inchiriere,costin-georgian-metrou-mutare-imediata-prima-inchiriere-IDxtjr,33.0,ONE,2023-09-23 11:36:37,Titan| Sectorul 3| Bucuresti,300,EUR
+7977505,Costin Georgian metrou - Mutare Imediata - Prima Inchiriere,costin-georgian-metrou-mutare-imediata-prima-inchiriere-IDxtjr,33.0,ONE,2023-09-23 11:36:37,Titan| Sectorul 3| Bucuresti,290,EUR
 7977502,inchiriez garsoniera in zona Drumul Taberei - Tricodava,inchiriez-garsoniera-in-zona-drumul-taberei-tricodava-IDxtjo,34.0,ONE,2023-09-23 11:33:55,Drumul Taberei| Sectorul 6| Bucuresti,200,EUR
 7964606,Închiriez Apartament cu 2 camere in Palady,nchiriez-apartament-cu-2-camere-in-palady-IDxpXo,56.0,TWO,2023-09-23 11:27:52,Theodor Pallady| Sectorul 3| Bucuresti,400,EUR
 7877347,Inchiriere Garsoniera Pallady |Metrou| |1 Decembrie|Parcare|Centrală,inchiriere-garsoniera-pallady-metrou-1-decembrie-parcare-central-IDx3fZ,42.0,TWO,2023-09-23 11:15:28,Ozana| Sectorul 3| Bucuresti,399,EUR
@@ -28,10 +35,3 @@ OfferID,Title,Slug,Area,Rooms,Date,Location,Price,Currency
 7953980,Închiriez Garsonieră Timpuri Noi,nchiriez-garsonier-timpuri-noi-IDxnc0,32.0,ONE,2023-09-23 10:29:07,Tineretului| Sectorul 4| Bucuresti,375,EUR
 7977379,Închiriez Garsonieră Universitate,nchiriez-garsonier-universitate-IDxthp,35.0,ONE,2023-09-23 10:22:58,Cismigiu| Sectorul 1| Bucuresti,450,EUR
 7977378,"Gorjului, metrou",gorjului-metrou-IDxtho,54.0,TWO,2023-09-23 10:20:07,Militari| Sectorul 6| Bucuresti,400,EUR
-7977375,Garsoniera Zen Living Apartments | Grozavesti | Mobilata si utilata,garsoniera-zen-living-apartments-grozavesti-mobilata-si-utilata-IDxthl,35.0,ONE,2023-09-23 10:17:06,Cismigiu| Sectorul 1| Bucuresti,450,EUR
-7947915,Apartament 2 cam | Aparatori | Mobilat utilat | Centrala | Metrou 9',apartament-2-cam-aparatori-mobilat-utilat-centrala-metrou-9-IDxlCb,64.0,TWO,2023-09-23 10:14:59,IMGB| Sectorul 4| Bucuresti,400,EUR
-7977373,Garsoniera inchiriere proprietar,garsoniera-inchiriere-proprietar-IDxthj,42.0,ONE,2023-09-23 10:13:00,Cismigiu| Sectorul 1| Bucuresti,370,EUR
-7977372,"Garsoniera Berceni, str. Postalionului, loc de parcare",garsoniera-berceni-str-postalionului-loc-de-parcare-IDxthi,35.0,ONE,2023-09-23 10:11:57,Cismigiu| Sectorul 1| Bucuresti,300,EUR
-7977367,"Piata Muncii, Dristor, Baba Novac, Studio 42mp, Refacut Total, Bloc Re",piata-muncii-dristor-baba-novac-studio-42mp-refacut-total-bloc-re-IDxthd,42.0,ONE,2023-09-23 10:09:06,Titan| Sectorul 3| Bucuresti,400,EUR
-7977356,Închiriez Garsonieră zona Tineretului,nchiriez-garsonier-zona-tineretului-IDxth2,33.0,ONE,2023-09-23 10:02:23,Vacaresti| Sectorul 4| Bucuresti,1700,EUR
-7977342,Închiriez Garsonieră zona Morarilor,nchiriez-garsonier-zona-morarilor-IDxtgO,42.0,ONE,2023-09-23 09:51:28,Pantelimon| Sectorul 2| Bucuresti,350,EUR
