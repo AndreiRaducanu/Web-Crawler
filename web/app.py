@@ -16,7 +16,10 @@ def simulate_data_acquisition():
 current_directory = os.path.dirname(__file__)
 test_txt_path = os.path.join(current_directory, '..', 'combined_data.csv')
 simulate_data_acquisition()
-df = pd.read_csv(test_txt_path)
+try:
+    df = pd.read_csv(test_txt_path)
+except pd.errors.EmptyDataError:
+    print("The CSV file is empty or does not contain any data.")
 
 
 @app.route('/')

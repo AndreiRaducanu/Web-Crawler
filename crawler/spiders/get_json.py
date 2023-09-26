@@ -62,7 +62,7 @@ class JsonSpider(scrapy.Spider):
                     offer_df = pd.DataFrame({
                         'OfferID': [offer_id],
                         'Title': [title],
-                        'Slug': [slug],
+                        'Link': [slug],
                         'Area': [area],
                         'Rooms': [rooms],
                         'Date': [date],
@@ -89,7 +89,7 @@ class JsonSpider(scrapy.Spider):
     def extract_offer_data(self, offer):
         offer_id = offer['id']
         title = offer['title']
-        slug = offer['slug']
+        slug = 'https://www.storia.ro/ro/oferta/' + offer['slug']
         area = offer['areaInSquareMeters']
         rooms = offer['roomsNumber']
         date = offer['dateCreated']
