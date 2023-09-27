@@ -52,7 +52,7 @@ def crawl():
 
         finally:
             retries -= 1  # Decrement the retry counter
-        time.sleep(3)  # Delay between runs
+        time.sleep(300)  # Delay between runs
 
     # Stop the reactor when all spiders are done
     reactor.stop()

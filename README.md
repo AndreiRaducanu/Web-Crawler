@@ -14,6 +14,8 @@ This project is a comprehensive web crawler designed to empower users with the a
 
 ## Local Web Interface 🌐
 
+![Interface](images/interface.png)
+
 Flask, a lightweight and flexible Python web framework, is a crucial component of this project. It is used to create a local web server that runs on your machine. This web server serves as the interface for interacting with the housing data extracted by the crawler. Here's how it works:
 
 - **Search Functionality:** You can input your housing search criteria, such as minimum and maximum price, on the web interface.
@@ -30,7 +32,7 @@ Flask, a lightweight and flexible Python web framework, is a crucial component o
 
 - **Python:** Python is the primary programming language for both the web crawler and the Flask application.
 
-- **Requests:** The Requests library is used for making HTTP requests and retrieving web data.
+- **Scrapy:** Scrapy is used for web scraping and data extraction from housing websites, allowing the retrieval of housing offers.
 
 ## How to Use 🚀
 
