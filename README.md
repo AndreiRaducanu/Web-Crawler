@@ -58,4 +58,4 @@ Contributions to this project are welcome! If you have any ideas for improvement
 
 ## License 📜
 
-This project is licensed under the [MIT License](LICENSE.txt), which means you are free to use and modify the code for your purposes.
+This project is licensed under the **MIT License**, which means you are free to use and modify the code for your purposes.
