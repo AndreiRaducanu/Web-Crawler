@@ -2,12 +2,13 @@ import scrapy
 from datetime import datetime
 import pandas as pd
 import os
+from typing import List, Dict, Any, Set
 
 
 class JsonSpider(scrapy.Spider):
     name = 'json_spider'
-    json_data = []
-    offer_ids = set()
+    json_data: List[Dict[str, Any]] = []
+    offer_ids: Set[int] = set()
 
     def __init__(self, page, token):
         self.page = int(page)
