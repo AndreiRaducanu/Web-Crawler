@@ -13,7 +13,7 @@ from typing import List
 
 # Set up Scrapy settings
 settings = {
-    'USER_AGENT': ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '  # noqa E501
+    'USER_AGENT': ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
                    '(KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'),
     'LOG_ENABLED': False,  # Disable Scrapy logs
 }
@@ -41,6 +41,9 @@ def crawl():
             # Run Scrapy spiders
             yield runner.crawl(TokenSpider)
             yield runner.crawl(JsonSpider, page=7, token=TokenSpider.build_id)
+            yield runner.join()
+
+            # Access offer_ids after the spider is finished
             new_id = JsonSpider.offer_ids
 
             # Check for new IDs
@@ -77,7 +80,12 @@ if __name__ == "__main__":
     flask_thread = threading.Thread(target=start_flask_app)
     flask_thread.daemon = True
     flask_thread.start()
-    # Start the crawling process
+
+    # Start the crawling process in the main thread
     crawl()
+
+    # Start the Twisted reactor in the main thread
     reactor.run()
+
+    # Wait for the Flask thread to complete (if necessary)
     flask_thread.join()
