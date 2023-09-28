@@ -14,7 +14,7 @@ This project is a comprehensive web crawler designed to empower users with the a
 
 ## Local Web Interface 🌐
 
-![Interface](images/interface.png)
+![Interface](images/interface.PNG)
 
 Flask, a lightweight and flexible Python web framework, is a crucial component of this project. It is used to create a local web server that runs on your machine. This web server serves as the interface for interacting with the housing data extracted by the crawler. Here's how it works:
 
@@ -58,4 +58,4 @@ Contributions to this project are welcome! If you have any ideas for improvement
 
 ## License 📜
 
-This project is licensed under the [MIT License](LICENSE), which means you are free to use and modify the code for your purposes.
+This project is licensed under the **MIT License**, which means you are free to use and modify the code for your purposes.
